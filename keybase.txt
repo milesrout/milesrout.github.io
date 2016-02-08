@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/milesrout
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://miles.rout.co.nz
+  * I am milesrout (https://keybase.io/milesrout) on keybase.
+  * I have a public key with fingerprint 6997 43CC 7FBD D756 4E32  FB84 CB77 692A 2AB2 961E
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012078beeb357c2df74ddae332ffc77a2dd0c1f0d09797b87f63e00296fc41646e890a",
+            "fingerprint": "699743cc7fbdd7564e32fb84cb77692a2ab2961e",
+            "host": "keybase.io",
+            "key_id": "cb77692a2ab2961e",
+            "kid": "01019ea52b5911dd4c2f7e94843c7527e3b186cf486bbb5d9005469e36821d2d65130a",
+            "uid": "a80f523846aac976495c8d24c7312119",
+            "username": "milesrout"
+        },
+        "service": {
+            "hostname": "miles.rout.co.nz",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1454906419,
+    "expire_in": 157680000,
+    "prev": "82a2c4d9821bef3d03b4140a98e457f9769fb0b1c3cda0de90f8449d19dd3fa3",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMNzAnicbZJ7UFRVHMcBk8eSIKMUyyDUFSMI6L7vPYjY2IvVQcoQHKm2e+85F64u
+e2H3Lg95yDhOyARKGWiCMmhDTNo0lMMa6cRjiSGS/IPHuGTykIY0pSmJITS6y+RM
+f3T+OXN+5/v7/L6/3/xca1Z5GbwHi5S4uC8aIr0Hu5scXpmXIqhSTFRhCZZUiu1H
+KxeyQGTXzPsViCVhOEHiHC8iJFIMJ5FQ5mgIBURRpCxLHCeQEOISIeMQBxzgRJ6T
+WQrhOAlYWaIJlmYRD3ABi8dkxZqDbPk2xarpWBYAjqYkiZNFCDmGpZEOFHlaEjmO
+BaRACqKOIJCemKvaPRm6OVGwo0RF1WP6w7xi73/0j3zjBEACQ4oMIAgIaYmUOQRo
+Xq/KMSSHKJHgWUmmeVYURQYCHGdoFiCK5UkCkpBlCGrFt2MFJ/C4zJAUT7OCIAGO
+pQEj8ZCkJY4iSIIAHqEd2axCHtLVeYoF2W2qQ8PK4zE9XKhIyDNZTyv/lSR6NImS
+mmg9oAPybaqmSqpF/83VtPwkT7JWku9RFyHR/C/HLCpWqM9STyhENruiWrEkQldK
+muIBEzRDA5ylCRCPoeJ8xYbMikfBcCyP68dTBhXqSF4fmkRDoLcrIpmCOCXSBI0L
+gEc0w8l6j0AWcZGQKAkKOEQAl3maBpAAEFKyQGGezgqsqs4mdZ9Cjs60KzlWQXPY
+EFbe0/3mY17eBi/f1T6eJfMyBKx9tHpPVAQvW09LGTPOuicfqE3Px0zeXL758teW
+i0Ty/HyN2daadujWjuKh8ZTKLt8iEPJ2SHLm6+cPTw3/Br4MHltnvVaQ8XC985nU
+mXuuzXe2nWhb91niw6CEevdcj/9TU+6orF7cNyqMi47ce7HDNX5gqr2+x576bcmW
+E0GLdVcurA/7oTmhfVXnQneWX9JrlxeOHVK76sgWU9eQAdZ9JEeP9p4PHP2r/Kul
+b9ZKIa2fvHAtxbdsz559KTHRL5GxpU0RwxPs5dBaV/clJuCPwhZ6affj22rLAzbU
+lVXdi9k4GCdtp78fmhg+XlAzED59rtOvM4NsmInaGqa6P13URqZE4um421mtfw8Y
+3WPvOl/s5PuzI3J39juNSuyt+1TbDZ+I9KN+pqHmB2FjV4N3Sfy4yd3WPhuX3V9z
+w/TO6Mhket/Erz6ZmmH3zquUem7Okv1xwTHjLtcZ12Dqpr2mPufGLXaL9kb1ycCl
+1CvzZ43bMW/KWFxhbCybbL9+2PJn5ef1psa29JzqkIp9B9VU9+LmHcXN6a90zMbe
+ORiYhx33qw2qhNOh06fuvjrcoPUm80cHf6923T37XOQHoSnh17/zX3Ma9p/ZkLbp
+Ass43ptzVP3kLF5d9Ys1K/PDga33Z0Y73jryc+izsyjDSS0ET7Wk9Y3gjTyTYAnH
+TGGyw2bwPrnsVN//8fYpxv8fjpm9ug==
+=FZgr
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/milesrout
+
+==================================================================
