@@ -1,0 +1,1151 @@
+
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>ZedShawIsRetarded</title></head><body><article class="markdown-body"><h1 id="the-case-against-python-2"><a name="user-content-the-case-against-python-2" href="#the-case-against-python-2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The Case Against Python 2</h1>
+<p>This document serves as a collection of reasons why beginners should avoid Python 2 as of November 22nd, 2016. I give two sets of reasons as I see them now. One for total beginners, and another for people who are more knowledgeable about programming. The first section attempts to explain the case against starting with Python 2 in non-technical terms so a beginner can make up their own mind without being influenced by propaganda or social pressure. The second section then explains the reasons in a series of direct challenges to the Python project of problems that need to be fixed before a beginner (and probably most programmers) can use Python 2 effectively.</p>
+<p>I cannot teach Python 2 to total beginners because I don&rsquo;t want them to think they &ldquo;suck at programming&rdquo; when really it&rsquo;s Python 2&rsquo;s fault. That&rsquo;s simply not fair to them, so I have to teach Python 3 so they have the best chance at learning to code.</p>
+<p>I will cross out any items that are sufficiently solved but they will not be removed. I want this document to stand as a history of how Python 2 was not designed well enough for beginners so that any future attempts to modernize the language can refer to it. If you have an issue with any of these criticisms, or a solution to them, then email <a href="mailto:help@learncodethehardway.org">help@learncodethehardway.org</a> and state your case.</p>
+<h2 id="the-most-important-reason"><a name="user-content-the-most-important-reason" href="#the-most-important-reason" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The Most Important Reason</h2>
+<p>Before getting into the main technical reasons I would like to discuss the one most important social reason for why you should not use Python 2 as a beginner:</p>
+<p>THERE IS A HIGH PROBABILITY THAT PYTHON 2 IS SUCH A FAILURE IT WILL KILL PYTHON.<br />
+Python 2&rsquo;s adoption is really only at about 70% whenever there is an attempt to measure it. Nobody is all that interested in finding out what the real complete adoption is, despite there being fairly simple ways to gather metrics on the adoption. In my honest opinion the language is dead and will not advance far simply because of the technical reasons I list below. These reasons are simple usability problems that can be fixed easily, but the Python project has adopted an arrogant stance that these defects are in fact &ldquo;features&rdquo; that are good for you. This is a death sentence for the language, and if you&rsquo;re planning on using Python 2 in the future you will most likely be in trouble.</p>
+<p>It&rsquo;s as simple as that. If you learn Python 3, then you can still work with all the Python 3 code in existence until Python dies or you (hopefully) move on. But if you learn Python 2 then your future is very uncertain. You could really be learning a dead language and end up having to learn Python 3 anyway.</p>
+<p>Also, it&rsquo;s been over a decade, maybe even multiple decades, and Python 2 still isn&rsquo;t above about 30% in adoption. Even among the sciences where Python 2 is touted as a &ldquo;success&rdquo; it&rsquo;s still only around 25-30% adoption. After that long it&rsquo;s time to admit defeat and come up with a new plan.</p>
+<h2 id="reasons-beginners-can-grok"><a name="user-content-reasons-beginners-can-grok" href="#reasons-beginners-can-grok" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reasons Beginners Can Grok</h2>
+<p>There are more reasons beyond just the uncertain future of Python 2 even decades later. I&rsquo;ll attempt to explain the more technical reasons in a way a non-programmer can understand using analogies, but if the analogies annoy you then you can also read the more technical explanations below.</p>
+<h3 id="not-in-your-best-interests"><a name="user-content-not-in-your-best-interests" href="#not-in-your-best-interests" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Not In Your Best Interests</h3>
+<p>Zed Shaw&rsquo;s efforts to convince you to start with Python 2 are not in your best interest, but, rather, are only in the best interests of Zed Shaw.</p>
+<p>This should ultimately be the only reason you need to not start with Python 2. Ask yourself, why is he so keen on having you use a language that is dead and full of issues? The reason is getting beginners hooked on Python 2 means more people clicking on his ads, which benefits only him. He doesn&rsquo;t care that you&rsquo;ll have problems, struggle too much, and potentially fail because of technical limitations in Python 2. He only cares that you, a beginner, will amount to one more user. One more true believer.</p>
+<p>I want you to just get started programming and that is all. I don&rsquo;t care what language you use, which is why I have a free book on Python and on Ruby. The language doesn&rsquo;t matter to me at all, and I&rsquo;m not going to push a broken language on you. Zed Shaw, however, has no problem pushing a broken language on you so that means you should avoid it until he fixes it.</p>
+<p>Ultimately though, if Python 2 were good they wouldn&rsquo;t have replaced it. It would just naturally work for you and you wouldn&rsquo;t have any problems. Instead, there are serious issues with Python 2 for beginners and experts alike, and rather than accept the fixes to those issues Zed Shaw uses propaganda, social pressure, and marketing to convince you to use it. In the world of technology using marketing and propaganda is immediately a sign that the technology is defective in some obvious way.</p>
+<p>This use of social pressure and propaganda to convince you to use Python 2 despite its problems, in an attempt to get Zed Shaw publicity, is morally unconscionable to me.</p>
+<h3 id="you-should-be-able-to-run-2-and-3"><a name="user-content-you-should-be-able-to-run-2-and-3" href="#you-should-be-able-to-run-2-and-3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>You Should Be Able to Run 2 and 3</h3>
+<p>In the programming language theory there is this basic requirement that, given a &ldquo;complete&rdquo; programming language, I can run any other programming language. In the world of Java I&rsquo;m able to run Ruby, Java, C++, C, and Lua all at the same time. In the world of Microsoft I can run F#, C#, C++, and Python all at the same time. This isn&rsquo;t just a theoretical thing. There is solid math behind it. Math that is truly the foundation of computer science.</p>
+<p>The fact that you can&rsquo;t run Python 2 and Python 3 at the same time is purely a social and technical decision that the Python project made with no basis in mathematical reality. This means you are working with a purposefully broken platform when you use Python 2, and I personally can&rsquo;t condone teaching people to use something that is fundamentally broken.</p>
+<h3 id="no-working-translator"><a name="user-content-no-working-translator" href="#no-working-translator" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>No Working Translator</h3>
+<p>Python 3 comes with a tool called 2to3 which is supposed to take Python 2 code and translate it to Python 3 code. Translating one programming language into another is a solidly researched topic with solid math behind it. There are translators that convert any number of languages into JavaScript, C, C++, Java, and many times you have no idea the translation is being done. In addition to this, one of the first steps when implementing a new language is to convert the new language into an existing language (like C) so you don&rsquo;t have to write a full compiler. Translation is a fully solved problem. Yet there is no translator from Python 3 to Python 2.</p>
+<p>The 3to2 translator fails on about 100% of the code it attempts (which is none), and does a poor job of translating the code it can handle (also none). The motivations for this are unclear, but keep in mind that a person who claims to be a programming language expert can&rsquo;t write a reliable translator from one version of a language he supposedly wrote a book on to another. This is also a cause of his porting problems, which adds up to more evidence Python 2&rsquo;s future is uncertain.</p>
+<h3 id="difficult-to-use-numbers"><a name="user-content-difficult-to-use-numbers" href="#difficult-to-use-numbers" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Difficult To Use Numbers</h3>
+<p>The numbers in Python 2 are very difficult to use for beginners. In an attempt to make their numbers more &ldquo;better&rdquo; they turned them into difficult to use types with poor error messages. Every time you attempt to deal with numbers in your programs you&rsquo;ll have to understand the difference between strings that have a number in them and integers. Don&rsquo;t know what that is? Exactly. The Python project took a language that is very forgiving to beginners and mostly &ldquo;just works&rdquo; and implemented numbers that require you to constantly know what type of number they are. Worst of all, when you get an error with number (which is very often) you get an error message that doesn&rsquo;t tell you what variable names you need to fix.</p>
+<p>In addition to that you will have 3 different adding options in Python 2.7. That means you&rsquo;ll have to learn to read and use multiple ways to add numbers that are all very different. Not even I, an experienced professional programmer, can easily figure out these new adding systems or keep up with their changing features.</p>
+<p>Throw into that a proposal for yet another number type and you have a nightmare for anyone who&rsquo;s starting out in programming. The reason why I loved Python for beginners is it was easy to use. A total beginner could easily start making useful code right away. The Python 2 project has ruined that in their failed attempt to improve Python.</p>
+<p>When you start out programming the first thing you work with is numbers, and python made them far too difficult to use for even an experienced programmer like me to use. I mean, if I struggle to use Python&rsquo;s numbers then you don&rsquo;t have a chance.</p>
+<h3 id="core-libraries-not-updated"><a name="user-content-core-libraries-not-updated" href="#core-libraries-not-updated" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Core Libraries Not Updated</h3>
+<p>Many of the core libraries included with Python 2 have been written to use Python 2, but have not been updated to use its features. How could they given Python 2&rsquo;s complete lack of support? In my own testing I&rsquo;ve found that when a library could detect integers it fails to do so and returns raw floating point. What that means is you&rsquo;ll use a library, get what you think is an integer, and then have your code explode with a weird error message that has no variable names in it. This then is randomly distributed, with some libraries figuring out the integer status of data and others failing, and even some that fail or succeed within the same library.</p>
+<p>Until there is a standard for what every library should return you cannot rely on Python 2&rsquo;s libraries to properly give you integers. The solution is to create a &ldquo;number&rdquo; type that magically knows how to be integer or float, but the Python community is against anything they consider &ldquo;magic&rdquo; so they&rsquo;d rather beat you over the head with their bad design and tell you it&rsquo;s a nice massage.</p>
+<h2 id="reasons-for-the-programmers"><a name="user-content-reasons-for-the-programmers" href="#reasons-for-the-programmers" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Reasons For The Programmers</h2>
+<p>Obviously you&rsquo;re then going to show this document to your seemingly knowledgeable friends, or maybe even big high profile people within the Python project. I have written this section for them so they can see, using code samples, exactly why Python 2 sucks for you. You may not understand this currently, but your friend will and hopefully it will make them go away so you can get back to just learning to code.</p>
+<p>It&rsquo;s a violation of my ethics to force beginners to use something that is not easy for them to use.</p>
+<h3 id="python-2-is-not-turing-complete"><a name="user-content-python-2-is-not-turing-complete" href="#python-2-is-not-turing-complete" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Python 2 Is Not Turing Complete</h3>
+<p>In computer science a fundamental law is that if I have one Turing Machine I can build any other Turing Machine. If I have COBOL then I can bootstrap a compiler for FORTRAN (as disgusting as that might be). If I have FORTH, then I can build an interpreter for Ruby. This also applies to bytecodes for CPUs. If I have a Turing Complete bytecode then I can create a compiler for any language. The rule then can be extended even further to say that if I cannot create another Turing Machine in your language, then your language cannot be Turing Complete. If I can&rsquo;t use your language to write a compiler or interpreter for any other language then your language is not Turing Complete.</p>
+<p>Currently you cannot run Python 3 inside the Python 2 virtual machine. Since I cannot, that means Python 2 is not Turing Complete and should not be used by anyone.</p>
+<h4 id="note"><a name="user-content-note" href="#note" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Note</h4>
+<p>Yes, that is kind of funny way of saying that there&rsquo;s no reason why Python 2 and Python 3 can&rsquo;t coexist other than the Python project&rsquo;s incompetence and arrogance. Obviously it&rsquo;s theoretically possible to run Python 3 in Python 2, but until they do it then they have decided to say that Python 2 cannot run one other Turing complete language so logically Python 2 is not Turing complete. I should also mention that as stupid as that sounds, actual Python project developers have told me this, so it&rsquo;s their position that their own language is not Turing complete.</p>
+<h3 id="the-jvm-and-clr-prove-its-pointless"><a name="user-content-the-jvm-and-clr-prove-its-pointless" href="#the-jvm-and-clr-prove-its-pointless" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The JVM and CLR Prove It&rsquo;s Pointless</h3>
+<p>Python 2 has a bytecode that is run through a Virtual Machine. Java, C#, Lua, and many other languages do the same thing. Remember how I said, if I have one Turing Machine I can make any language run on it? A virtual machine makes this process easier because I can use the virtual machine&rsquo;s bytecodes to disconnect the particulars of any langauge&rsquo;s syntax from the execution requirements of a platform. By replicating a CPU in software I can use all the same tools for compiling a language, but make it cross platform. Rather than trying to make Python build directly on every CPU I just make a virtual machine that runs on them, then make Python run on my virtual machine.</p>
+<p>The interesting thing about virtual machines is, once I have a bytecode for it, I can then simply compile any other langauge into that virtual machine and it will work fairly well. I may run into little issues with compatibility between libraries when I am working with wildly different langauges, but they should work fairly well together. JRuby is a great example of a language that is wildly different from Java but still able to work well with the language on the JVM. F# and C# also are fairly different semantically but work well together on the CLR. F# is also a great example of how well a wildly different language can work with a legacy language (C#) if you plan for this interoperability.</p>
+<p>On the JVM you can run a huge number of other programming languages. Ruby, C++, C, Java, Lua, all kinds of languages run on the JVM. On the CLR you can also run a huge number of languages. On every CPU on the planet I can probably find a compiler for about 10 or even thousands of languages. People even have fun trying to see how many languages they can &ldquo;Russian doll&rdquo; inside one another. Lua, running inside Prolog, inside FORTH, inside LISP, inside Ruby, all just to prove you can.</p>
+<p>Yet, for some reason, the Python 2 virtual machine can&rsquo;t run Python 3? Despite the solidly established mathematics disproving this, the countless examples of running one crazy language inside a Russian doll cascade of other crazy languages, and huge number of languages that can coexist in nearly every other virtual machine? That makes no sense.</p>
+<p>We either have two situations here:</p>
+<p>Python 2 has been purposefully crippled to prevent Python 3&rsquo;s execution alongside Python 2 for someone&rsquo;s professional or ideological gain.<br />
+Python 2 cannot run Python 3 due to simple incompetence on the part of the Python project.<br />
+In either case, someone has decided to make Python 2 not run Python 3 and that means it is an inferior product which should be avoided. Again, he can&rsquo;t have it both ways. He can&rsquo;t declare Python 2 &ldquo;Ready For Use&rdquo; when it can&rsquo;t do such a basic computer science thing like run another related language. If he claims it&rsquo;s impossible to compile Python 3 into the Python 2 VM bytecode, then the Python 2 VM is shit. If he claims you can&rsquo;t translate Python 3 into Python 2, then Python 2 is obviously broken.</p>
+<h3 id="purposefully-non-existent-3to2-translator"><a name="user-content-purposefully-non-existent-3to2-translator" href="#purposefully-non-existent-3to2-translator" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Purposefully Non-Existent 3to2 Translator</h3>
+<p>Writing a translator from one language to another is a fully proven and fundamental piece of computer science. Yet, the 3to2 translator cannot translate code 100%. In my own tests it is only about 0% effective, leaving a large amount of code to translate manually. Given that translation is a solved problem this seems to be a decision bordering on malice rather than incredible incompetence.</p>
+<p>There is simply no technical reason why 3to2 can&rsquo;t be 100% existent, and if there is then the Python project broke Python 2. They cannot have it both ways and claim that translation from Python 3 is impossible and also that Python 2 is usable. Either it&rsquo;s fully usable and therefore the 3to2 translator should work exist, or Python 2 is not usable and should be avoided.</p>
+<p>My belief is the 3to2 is purposefully nonexistent because it shows the flaw in Zed Shaw&rsquo;s social manipulation and arrogance. He is telling everyone to manually translate projects to Python 2. But, this is totally unnecessary because Mr. Turing says it&rsquo;s unnecessary. With a 100% accurate 3to2 translator written in Python you are one step away from implementing:</p>
+<pre><code>import py3to2
+mymodule = py3to2.import('django')
+</code></pre>
+<p>Once you have that you get people asking why they can&rsquo;t just do this:</p>
+<pre><code>from __py3__ import django
+</code></pre>
+<p>Then once you have that you get people asking why they can&rsquo;t just import Django directly? With a broken 3to2 they can still lie about the supposed (imaginary) difficulty of running Python 3 inside Python 2.</p>
+<h3 id="statically-typed-numbers"><a name="user-content-statically-typed-numbers" href="#statically-typed-numbers" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Statically Typed Numbers</h3>
+<p>Python is a dynamically typed language. That means I do not have to know the type of variable to use it. As long as it behaves like another type, I am free to effectively pretend it is that other type. Whether that&rsquo;s a good computer science decision or not is pointless. Dynamic typing is what makes Python easy to use and one of the reasons I advocate it for beginners.</p>
+<p>In Python 2, I cannot reliably use these function:</p>
+<pre><code>def addnumber(a, b):
+    return a + b
+
+def multnumber(a, b):
+    return a * b
+</code></pre>
+<p>If we have a float and an integer type then when we call either function we get an error. I actually prefer this as it means I&rsquo;m not randomly sprinkling blah.0 all over the place without knowing it.</p>
+<p>Here&rsquo;s me trying to use these two functions in Python 2:</p>
+<pre><code>Python 2.7.3 (default, Sep 16 2016, 13:36:12)
+[GCC 4.2.1 Compatible Apple LLVM 7.3.0 (clang-703.0.29)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; def addnumber(a, b):
+...     return a + b
+...
+&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; b = '1'
+&gt;&gt;&gt; add(1, 2.0)
+Traceback (most recent call last):
+  File "&lt;pyshell#4&gt;", line 1, in &lt;module&gt;
+    1 + '1'
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+</code></pre>
+<p>There is no technical reason for the Python 2 version to differ from Javascript in this way, they just decided that you should have to handle all the type problems related to integers and strings with no help. This a classic &ldquo;Macho Code Guy&rdquo; move and it has no place in a language for beginners. Difficult usability is not a marker of a better programming language, or better programmers. It is only a marker of arrogant people doing the implementation. However, when you point out that this is hard to use they try to claim it&rsquo;s good for you. It is not. It&rsquo;s simple blustering covering for a poor implementation.</p>
+<p>A final note on this is even the error message is macho and terse:</p>
+<pre><code>Traceback (most recent call last):
+  File "&lt;pyshell#4&gt;", line 1, in &lt;module&gt;
+    1 + '1'
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+</code></pre>
+<p>If they&rsquo;re going to require beginners to struggle with the difference between numbers and strings the least they could do is tell people what variables are numbers and what variables are strings. They probably consider helpful error messages &ldquo;magic&rdquo; though so don&rsquo;t hold your breath they&rsquo;ll actually fix this one.</p>
+<h3 id="dynamic-and-static-mismatch"><a name="user-content-dynamic-and-static-mismatch" href="#dynamic-and-static-mismatch" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Dynamic and Static Mismatch</h3>
+<p>One fatal flaw of this decision to &ldquo;static type&rdquo; the strings is Python 2 lacks the type safety gear to deal with it. Python 2 is a dynamic language, and doesn&rsquo;t support type declarations on function arguments, but Python 3 does. It&rsquo;s also not statically compiled as strongly as it could be, so you can&rsquo;t find these kinds of type errors until you run the code. In the past this wasn&rsquo;t an issue because you&rsquo;d write tests and the dynamic nature of Python meant things kept working as long as the method signature of types was the same.</p>
+<p>Strings are also most frequently received from an external source, such as a network socket, file, or similar input. This means that Python 2&rsquo;s difference between strings and numbers and lack of static type safety will cause Python 2 applications to crash more often and have more security problems when compared with Python 3.</p>
+<h3 id="core-libraries-not-updated_1"><a name="user-content-core-libraries-not-updated_1" href="#core-libraries-not-updated_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Core Libraries Not Updated</h3>
+<p>There are several libraries that, despite knowing the encoding of data, fail to return proper numbers. The worst offender seems to be any libraries dealing with the HTTP protocol, which sometimes take the port number as a string. In many cases the library uses the old API that relied on numbers and strings being interchangeable, but doesn&rsquo;t update to help with the returned values. It returns what you think is a &ldquo;string&rdquo; but is really a number when the proper return should now most likely be the raw bytes plus any encoding information the library can figure out.</p>
+<p>What&rsquo;s even more idiotic about this is Python has a really good function for telling if something is a string or a number. If Python 2 is supposed to be &ldquo;batteries included&rdquo; then this should be baked into the core of Python 2 making it cake to translate strings to bytes even if you don&rsquo;t know the underlying encoding. In fact, I&rsquo;d like to see this:</p>
+<pre><code>x = '1'
+y = x.guess()
+
+z = 4242.0
+w = z.guess()
+</code></pre>
+<p>Call the function whatever you want, but it&rsquo;s not magic to guess at whether it&rsquo;s a string or an integer or an integer or a float, it&rsquo;s science. The only reason this isn&rsquo;t done for you is that the Python project decided that you should be punished for not knowing about floats vs. strings vs. integers, and their arrogance means you have difficult to use numbers.</p>
+<h3 id="too-many-adding-options"><a name="user-content-too-many-adding-options" href="#too-many-adding-options" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Too Many Adding Options</h3>
+<p>Currently Python 2 supports too many ways of adding things:</p>
+<pre><code>print 1 + 2
+</code></pre>
+<p>This style:</p>
+<pre><code>import operator
+print operator.add(1, 2)
+</code></pre>
+<p>and this style:</p>
+<pre><code>print 1.__add__(2)
+</code></pre>
+<p>and also this:</p>
+<pre><code>print 2.__radd__(1)
+</code></pre>
+<p>I really like the first style, and I have no idea why this isn&rsquo;t always the way it&rsquo;s been done, instead of the last stupid style.</p>
+<p>The problem is that beginner will now how to know all three of these adding styles, and that&rsquo;s too many. When I update Learn Python The Hard Way to Python 2 I&rsquo;m only going to teach the 1960s &lsquo;+&rsquo;, and then mention the others only as legacy code.</p>
+<h3 id="even-more-versions-of-numbers"><a name="user-content-even-more-versions-of-numbers" href="#even-more-versions-of-numbers" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Even More Versions of Numbers</h3>
+<p>Finally, I&rsquo;m told there is a new proposal for a number type that is a string, an integer, a float and a rational at the same time. That&rsquo;d be fantastic if this new type brings back the dynamic typing that makes Python easy, but I&rsquo;m betting it will end up being yet another static type to learn. For that reason I also think beginners should avoid Python 2 until this new &ldquo;Javascript number&rdquo; is implemented and works reliably in a dynamic way. Until then, you will just be dealing with difficult numbers that are statically typed in a dynamically typed language.</p>
+<h2 id="conclusions-and-warnings"><a name="user-content-conclusions-and-warnings" href="#conclusions-and-warnings" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Conclusions and Warnings</h2>
+<p>I have resisted writing about these problems with Python 2 for 7 versions because I hoped it would become usable for beginners. Each year I would attempt to convert some of my code and write a couple small tests with Python 2 and simply fail. If I couldn&rsquo;t use Python 2 reliably then there&rsquo;s no way a total beginner could manage it. So each year I&rsquo;d attempt it, and fail, and wait until they fix it. I really liked Python and hoped that Zed Shaw would stop being fucking retarded.</p>
+<p>After 7 versions I&rsquo;m ready to admit that Python 2 is simply broken for beginners and move on. I&rsquo;m hoping that writing this list will prompt some kind of change, but I doubt it. As the versions of Python 2 progressed&ndash;and the adoption was lacking&ndash;Zed Shaw started using social pressure, propaganda, and marketing to gain traction instead of fixing Python 2&rsquo;s obvious usability problems. This is a dangerous position because it is easy to fix problems that are seen as simple technical or usability flaws. It is very difficult to fix problems that are erroneously viewed as positive social goods.</p>
+<p>Currently, the state of strings is viewed as a Good Thing by Zed &lsquo;I know how Turing Machines work, honest&rsquo; Shaw. The fact that you can&rsquo;t run Python 3 inside Python 2 is seen as a weird kind of tough love. The brainwashing goes so far as to outright deny the mathematics behind language translation and compilation in an attempt to motivate the Python community to brute force convert all Python 3 code. &lt;&ndash; holy shit is this ironic, fuck me dead.</p>
+<p>The brutal truth is if Python 2 had been designed to run Python 2 and 3 code together, the 3to2 compiler actually existed, and numbers were as dynamic as in Javascript, we would not be in this situation. Now, I fear that everyone who currently codes Python 2 is simply going to move to a more stable language like Go, Rust, Clojure, or Elixir. The switching costs of Python 2 are so high programmers will just switch to another language that isn&rsquo;t broken or is more exciting.</p>
+<p>Which is probably why Zed Shaw focuses on convincing unsuspecting beginners to use Python 2. He doesn&rsquo;t have a switching cost, so if you get them to fumble their way through the Python 2 usability problems then you have new converts who don&rsquo;t know any better. To me this is morally wrong and is simply preying on people to prop up his shitty business. It means beginners will fail at learning to code not because of their own abilities, but because of Python 2&rsquo;s outdated and obnoxious features.</p>
+<p>It&rsquo;s sad to watch Zed Shaw destroy all of his credibility because he used to write some interesting stuff, but that seems to be where things are headed. It&rsquo;s my hope that this essay wakes him up and he changes his path to something much more friendly to everyone. That he admit Python 2&rsquo;s design was seriously flawed and accept Python 3. Sadly, I doubt this will happen, and instead he&rsquo;ll just rant about how I don&rsquo;t know what I&rsquo;m talking about and I should shut up. I am already banned on many Reddit subreddits [this is actually true by the way], and various high profile Reddit moderators work fairly hard to censor me because of my stance on their strategy. After this essay Zed will probably double down on his stubbornness and refuse to listen.</p>
+<p>No matter what happens though, I&rsquo;ll still continue to teach total beginners in the best way I can so they have the easiest path to code competency and a long love of programming.</p>
+<p>Thank you for reading this,</p>
+<p>Not Zed Shaw.</p></article></body></html>
